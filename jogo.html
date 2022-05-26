@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryInfo</title>
+    <link rel="icon" type="image/png" href="imgs/worldIcon.png" />
+    <link rel="stylesheet" href="jogo.css">
+
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <p id="site"> <a id="linkar" href="main.html"> CountryInfoGuesser </a></p>
+
+            <p id="tip"> + 200 Países</p>
+            <img src="imgs/world brnaco.png" alt="globe" id="globo">
+            <a href="apiPage.html" id="explore"> Explorar + </a>
+        </header>
+
+        <p id="title"> Adivinhe a que continente o país pertence! </p>
+        <p id="rng"> </p> 
+        <div id="game">
+
+            <div id="guess">
+
+                <img id="guessFlag" src="imgs/loading.jpg" alt="">
+
+                <p id="guessPais"> Loading ... </p>
+                <button id="gerar"> Carregar País </button>
+
+            </div>
+            <div id="botoes">
+                <button class="continente">Africa</button>
+                <button class="continente">Americas</button>
+                <button class="continente">Antarctic</button>
+                <button class="continente">Asia</button>
+                <button class="continente">Europe</button>
+                <button class="continente">Oceania</button>
+                <!--  <p id="certoErrado"> Errado </p> -->
+            </div>
+
+
+        </div>
+        
+        <script src="jogo.js" defer> </script>
+    </body>
+
+</html>
