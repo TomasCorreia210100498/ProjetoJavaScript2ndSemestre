@@ -1,1 +1,2 @@
 "# ProjetoJavaScript2ndSemestre" 
+Através da API restcountries, pedir dados de países como a sua capital, população e nome, e com javascript dispor na página web dinamicamente. Há um jogo de adivinhar que continente o país gerado por um botão pertence, indo buscar esse país e os seus dados à API. Algo que irei fazer ainda é a opção de quando clicar num país, abrir uma página com informação mais detalhada acerca do mesmo e curiosadades que possa ter.
