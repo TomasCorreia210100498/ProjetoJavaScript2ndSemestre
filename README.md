@@ -1,1 +1,3 @@
 "# ProjetoJavaScript2ndSemestre" 
+
+    Através da API restcountries, consigo puxar os dados de mais de 200 países de todo o mundo, transformando-os para formato JSON e trabalhando com os mesmos com Javascript. A ideia inicial era mostrar monumentos de um determinado país, mas achei mais interessante os dados dos países e fazer um jogo relacionado com os mesmos, neste caso adivinhar o continente do país exibido. Ainda falta tornar o layout responsivo, e queria acrescentar uma funcionalidade de ao clicar num país, aparecer ocupando 100% do browser, dados mais específicos do país clicado e algumas curiosidades.
