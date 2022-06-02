@@ -5,7 +5,10 @@ let pais = document.getElementById("guessPais")
 let score = document.getElementById("score")
 var btns = document.querySelectorAll(".continente")
 var RNG = document.getElementById("rng")
+var tentativas = document.getElementById("tentativas")
+var taxaRespostas = document.getElementById("percentagem")
 
+var numero2 = 0;
 var numero = 0;
 var gerar = document.getElementById("gerar")
 
@@ -41,18 +44,23 @@ async function getCountry() {
     if(flag.alt == e.target.textContent){
         e.target.style.backgroundColor = "green"
         e.target.style.color = "black"
-       
+        numero2 = numero2 + 1
+        tentativas.textContent = "Tentativas:  " + numero2
         numero = numero + 1;
         score.textContent = "Respostas certas:  " + numero;
+        taxaRespostas.textContent = "Score: " + Math.round(numero / numero2 * 100) + "%"
 
     }else{
       e.target.style.backgroundColor = "red"
       e.target.style.color = "black"
-        
+        numero2 = numero2 + 1
+        tentativas.textContent = "Tentativas:  " + numero2
+        taxaRespostas.textContent = "Score: " +(numero / numero2 * 100) + "%"
        }
     }
 }
-  
+
+
 
 getCountry()
 

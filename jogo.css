@@ -126,7 +126,7 @@ header {
 
 #score{
    display: flex;
-   margin-left:44%;
+   margin-left:33%;
     margin-top: 0vw;
     font-size: 20px;
 }
@@ -169,4 +169,22 @@ header {
 
 #rng{
     display: none;
+}
+
+#tentativas{
+    display: flex;
+   margin-left:5%;
+    margin-top: 0vw;
+    font-size: 20px;
+}
+
+#estatisticas{
+    display: flex;
+}
+
+#percentagem{
+    display: flex;
+    margin-left:5%;
+     margin-top: 0vw;
+     font-size: 20px;
 }
