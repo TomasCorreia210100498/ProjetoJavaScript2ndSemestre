@@ -28,6 +28,7 @@ async function getCountry() {
       for(const ele of btns) {
         ele.style.backgroundColor = "black"
         ele.style.color = "white"
+        ele.disabled = false
       }
   }
 
@@ -36,6 +37,13 @@ async function getCountry() {
     ele.addEventListener("click", clicado)
   }
   
+  if(pais.textContent = "Clique abaixo para começar"){
+    for(const ele of btns){
+      ele.disabled = true
+    }
+  }
+  
+
   function clicado(e){
     console.log(e.target.textContent)
     var clicked = e.target.textContent
