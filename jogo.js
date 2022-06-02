@@ -51,15 +51,15 @@ async function getCountry() {
         score.textContent = "Respostas certas:  " + numero;
         let percentage = 0;
         percentage = (numero / numero2 * 100)
-        percentage.toFixed(2)
-        taxaRespostas.textContent = "Score: " + percentage.toFixed(2) + "%"
+        
+        taxaRespostas.textContent = "Score: " + percentage.toFixed(1) + "%"
 
     }else{
       e.target.style.backgroundColor = "red"
       e.target.style.color = "black"
         numero2 = numero2 + 1
         tentativas.textContent = "Tentativas:  " + numero2
-        taxaRespostas.textContent = "Score: " +percentage.toFixed(2) + "%"
+        taxaRespostas.textContent = "Score: " + percentage.toFixed(1) + "%"
        }
     }
 }
