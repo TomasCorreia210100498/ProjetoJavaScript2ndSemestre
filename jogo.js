@@ -44,18 +44,22 @@ async function getCountry() {
     if(flag.alt == e.target.textContent){
         e.target.style.backgroundColor = "green"
         e.target.style.color = "black"
+        
         numero2 = numero2 + 1
         tentativas.textContent = "Tentativas:  " + numero2
         numero = numero + 1;
         score.textContent = "Respostas certas:  " + numero;
-        taxaRespostas.textContent = "Score: " + Math.round(numero / numero2 * 100) + "%"
+        let percentage = 0;
+        percentage = (numero / numero2 * 100)
+        percentage.toFixed(2)
+        taxaRespostas.textContent = "Score: " + percentage.toFixed(2) + "%"
 
     }else{
       e.target.style.backgroundColor = "red"
       e.target.style.color = "black"
         numero2 = numero2 + 1
         tentativas.textContent = "Tentativas:  " + numero2
-        taxaRespostas.textContent = "Score: " +(numero / numero2 * 100) + "%"
+        taxaRespostas.textContent = "Score: " +percentage.toFixed(2) + "%"
        }
     }
 }
