@@ -6,7 +6,7 @@ let score = document.getElementById("score")
 var btns = document.querySelectorAll(".continente")
 var RNG = document.getElementById("rng")
 
-
+var numero = 0;
 var gerar = document.getElementById("gerar")
 
 async function getCountry() {
@@ -20,8 +20,9 @@ async function getCountry() {
       flag.src = res[random].flags["png"]
       pais.textContent = res[random].name["common"]
       flag.alt = res[random].region
+      
 
-      for(const ele of btns){
+      for(const ele of btns) {
         ele.style.backgroundColor = "black"
         ele.style.color = "white"
       }
@@ -40,11 +41,15 @@ async function getCountry() {
     if(flag.alt == e.target.textContent){
         e.target.style.backgroundColor = "green"
         e.target.style.color = "black"
+       
+        numero = numero + 1;
+        score.textContent = "Respostas certas:  " + numero;
 
     }else{
       e.target.style.backgroundColor = "red"
       e.target.style.color = "black"
-      }
+        
+       }
     }
 }
   

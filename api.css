@@ -76,7 +76,7 @@ header{
 }
 
 #dropdownContent p{
-    border:1px solid black;
+    border-bottom: 1px solid black;
     padding: 3px;
     margin-left:20px;
     padding:5px;
