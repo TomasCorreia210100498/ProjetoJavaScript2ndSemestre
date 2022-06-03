@@ -26,14 +26,15 @@ getCountry()
 
  function showCountry(data){
     const country = document.createElement("div")
-    country.className = `${data.region}`
+    country.id = `${data.region}`
+    country.className = "country"
     country.innerHTML =/* ` 
     <div class="${data.region}"> */`
     <div class="country-img"> 
     <img src="${data.flags["png"]}" alt="${data.name["common"]}">               
 </div>
 <div class="country-info"> 
-<h3> ${data.name["common"]} </h3>    
+<h3> ${data.translations.por["common"]} </h3>    
 <p> <strong> População:</strong>${ "  "+data.population}</p>
     <p class="nomeRegiao"> <strong> Continente:</strong> ${" "+data.region}</p>
     <p> <strong> Capital:</strong>${"  "+data.capital}</p>
@@ -50,7 +51,8 @@ getCountry()
 
 
 
-let children = document.querySelector(".countries").children
+var children = document.querySelector(".countries").children
+
 
 //Filtrar os países por continente
 
@@ -60,7 +62,7 @@ function clicado(e){
 
 for(let i = 0;i<children.length; i++){
    /* console.log(children.item(i).className) */
-    if(children.item(i).className == continenteAtual.innerHTML){
+    if(children.item(i).id == continenteAtual.innerHTML){
             children.item(i).style.display = "block"
     }else{
         children.item(i).style.display = "none"
@@ -69,5 +71,21 @@ for(let i = 0;i<children.length; i++){
     if(continenteAtual.innerHTML == "Todos"){
         children.item(i).style.display = "block"
     }
+   
 }
 }
+
+/*
+var overlay = document.getElementById("overlay")
+
+var conjuntoPaises = document.querySelectorAll("country")
+
+
+for(const ele of conjuntoPaises){
+    ele.addEventListener("click", show)
+}
+
+function show(e){
+    console.log()
+}
+*/

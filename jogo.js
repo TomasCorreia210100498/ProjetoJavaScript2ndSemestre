@@ -21,7 +21,7 @@ async function getCountry() {
 
     var random = Math.floor(Math.random() * 251)
       flag.src = res[random].flags["png"]
-      pais.textContent = res[random].name["common"]
+      pais.textContent = res[random].translations.por["common"]
       flag.alt = res[random].region
       
 
