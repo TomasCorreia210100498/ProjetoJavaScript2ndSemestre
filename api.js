@@ -58,11 +58,12 @@ getCountry()
             let reg = document.getElementById("regiao").textContent = "Continente:  " + data.region
             let lmap = document.getElementById("linkMap").href = data.maps["googleMaps"]
             let loc = document.getElementById("loc").textContent =  "Mapa: " + data.maps["googleMaps"]
-            let latlong = document.getElementById("lat-long").textContent = "Latitude: " + data.latlng["0"] + "        Longitude:  " + data.latlng["1"]
+            let latlong = document.getElementById("lat-long").textContent = "Latitude:  " + data.latlng["0"] + " Longitude:  " + data.latlng["1"]
             let timezone = document.getElementById("tz").textContent = "Fuso Horário:   " + data.timezones["0"]
             let subreg = document.getElementById("subreg").textContent = "Região:  " + data.subregion
-            let nomepais = document.getElementById("nomeCountry").textContent = data.name["common"]
+            let nomepais = document.getElementById("nomeCountry").textContent = data.translations.por["common"]
             let imgem = document.getElementById("imagem").src = data.flags["png"]
+            let ofc = document.getElementById("oficial").textContent = "Nome oficial:  " + data.translations.por["official"]
       }
     
       
