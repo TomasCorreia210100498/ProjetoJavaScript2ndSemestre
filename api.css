@@ -280,5 +280,11 @@ header{
             margin-left:5vw;
             
         }
-        
+        #dropdown:hover #dropdownContent{
+            display: block;
+            
+        }
+        #dropdown:hover{
+            margin-bottom: 70vw;
+        }
 }
