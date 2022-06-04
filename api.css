@@ -151,6 +151,109 @@ header{
     padding-top: 10px;
 }
 
-.overlay{
-    display:none;
+
+
+ 
+ .overlay {
+     
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    background-color: white; 
+    background-color: white; 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    background-image: url(/imgs/whiteback.jpg);
 }
+  
+.overlay-content{
+        display:flex;
+}
+
+#nomeCountry{
+    font-size: 50px;
+    margin-left:16vw;
+    margin-top: 4vw;
+    font-weight: lighter;
+    width:20vw;
+    
+}
+
+#imagem{
+    margin-left: 16vw;
+    margin-top: 3vw;
+    border: 5px solid black;
+}
+
+#left{
+    font-size:25px;
+    font-weight: lighter;
+}
+
+#right{
+    font-size:25px;
+    font-weight: lighter;
+}
+
+#nomeCapital{
+    margin-left:10vw;
+    margin-top: 8vw;
+    
+}
+
+#people{
+    margin-left:10vw;
+    margin-top: 3vw;
+}
+
+#regiao{
+    margin-top: 3vw;
+    margin-left: 10vw;
+}
+
+#linkMap{
+    text-decoration: none;
+    color:black;
+}
+
+#lat-long{
+    margin-top:3vw ;
+    margin-left: 10vw;
+}
+#tz{
+    margin-top:3vw ;
+    margin-left: 10vw;
+}
+
+
+#loc{
+    margin-left:10vw;
+    margin-top:3vw;
+    
+}
+
+#subreg{
+    margin-top:3vw ;
+    margin-left: 10vw;
+}
+ 
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  } 
+

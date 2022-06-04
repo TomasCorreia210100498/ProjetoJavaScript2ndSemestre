@@ -19,48 +19,76 @@
     </header>
 
     <div id="overlay">
-          <div id="left"> 
-            <p id="ctry"> </p> 
+        <div id="left">
+            <p id="ctry"> </p>
             <img src="" alt="">
             <p id="cap"> </p>
             <p id="reg"> </p>
-          </div>
-         
-          <div id="right"> 
-                <p id="cord"> </p>
-                <p id="area"> </p>
-                <p id="pop"> </p>
-                <p id="lingua"> </p>
-                <p id="timezone"> </p> 
-          </div>
+        </div>
+
+        <div id="right">
+            <p id="cord"> </p>
+            <p id="area"> </p>
+            <p id="pop"> </p>
+            <p id="lingua"> </p>
+            <p id="timezone"> </p>
+        </div>
+
+
+    </div>
+
+    <div id="main">
+       
+        <div id="myNav" class="overlay">
+
             
-             
-    </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+         
+            <div class="overlay-content">
+                <div id="left">
+                    <h2 id="nomeCountry"> Portugal </h2>
+                    <img id="imagem" src="imgs/africa.jpg" alt="" height="auto" width="400px"> 
+                    
+                    
+                </div>
+                <div id="right"> 
+                    <p id="nomeCapital">Capital: Lisboa </p>
+                    <p id="people">População: 11000000 </p>
+                    <p id="regiao">Continente: Europa </p>
+                    <p id="subreg"> Formato código postal:  </p>
+                    <a id="linkMap" href="" target="_blank"> <p id="loc"> Mapa:  </p> </a>
+                    <p id="lat-long">Longitude: -21 &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Latitude: 21 </p>
+                    <p id="tz">Fuso Horário: CET </p>
+                    
+                </div>
+            </div>
+            
+        </div>
+
     
-<div id="main">
-    
 
-    <div id="filtros">
+        <div id="filtros">
 
-        <p id="filtrar"> Filtrar por continente: </p>
-        <ul id="dropdown">
-            <p id="atualContinente">Todos </p>
-            <div id="dropdownContent">
-                <p class="região">Africa</p>
-                <p class="região">Americas</p>
-                <p class="região">Asia</p>
-                <p class="região">Europe</p>
-                <p class="região">Oceania</p>
-                <p class="região">Todos</p>
+            <p id="filtrar"> Filtrar por continente: </p>
+            <ul id="dropdown">
+                <p id="atualContinente">Todos </p>
+                <div id="dropdownContent">
+                    <p class="região">Africa</p>
+                    <p class="região">Americas</p>
+                    <p class="região">Asia</p>
+                    <p class="região">Europe</p>
+                    <p class="região">Oceania</p>
+                    <p class="região">Todos</p>
 
 
-        </ul>
-        <p> <a id="goJogo" href="jogo.html"> CountryInfoGuesser</a> </p>
-    </div>
-   
+            </ul>
+            <p> <a id="goJogo" href="jogo.html"> CountryInfoGuesser</a> </p>
+        </div>
 
-    <div class="countries">
-      <!--  <div class="country">
+
+        <div class="countries">
+            <!--  <div class="country">
             <div class="country-img">
                 <img src="https://flagcdn.com/w320/uy.png" alt="">
             </div>
@@ -73,11 +101,12 @@
             </div>
         </div>  -->
 
+        </div>
     </div>
-</div>
-   
+
 
     <script src="api.js" defer> </script>
 </body>
 <div>
+
 </html>

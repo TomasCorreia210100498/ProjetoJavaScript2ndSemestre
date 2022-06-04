@@ -27,10 +27,10 @@ getCountry()
  function showCountry(data){
     const country = document.createElement("div")
     country.id = `${data.region}`
+    country.title = `${data.name["common"]}`
     country.className = "country"
-    country.innerHTML =/* ` 
-    <div class="${data.region}"> */`
-    <div class="country-img"> 
+    country.innerHTML =
+    `<div class="country-img"> 
     <img src="${data.flags["png"]}" alt="${data.name["common"]}">               
 </div>
 <div class="country-info"> 
@@ -42,16 +42,38 @@ getCountry()
 
 </div>`
    
+    country.addEventListener("click", exibir)
     countriesElem.appendChild(country)
     country.style.border = "3px solid black"
     country.style.margin = "1.7vw"
     country.style.height = "fit-content"
     country.style.width = "min-content"
+    
+    function exibir(e){
+        document.getElementById("myNav").style.width = "100%";
+            console.log(data.languages)
+           
+            let cap = document.getElementById("nomeCapital").textContent = "Capital:  " + data.capital
+            let ppl = document.getElementById("people").textContent = "População:  " + data.population
+            let reg = document.getElementById("regiao").textContent = "Continente:  " + data.region
+            let lmap = document.getElementById("linkMap").href = data.maps["googleMaps"]
+            let loc = document.getElementById("loc").textContent =  "Mapa: " + data.maps["googleMaps"]
+            let latlong = document.getElementById("lat-long").textContent = "Latitude: " + data.latlng["0"] + "        Longitude:  " + data.latlng["1"]
+            let timezone = document.getElementById("tz").textContent = "Fuso Horário:   " + data.timezones["0"]
+            let subreg = document.getElementById("subreg").textContent = "Região:  " + data.subregion
+            let nomepais = document.getElementById("nomeCountry").textContent = data.name["common"]
+            let imgem = document.getElementById("imagem").src = data.flags["png"]
+      }
+    
+      
+      
+   
 }
 
 
 
 var children = document.querySelector(".countries").children
+
 
 
 //Filtrar os países por continente
@@ -64,8 +86,10 @@ for(let i = 0;i<children.length; i++){
    /* console.log(children.item(i).className) */
     if(children.item(i).id == continenteAtual.innerHTML){
             children.item(i).style.display = "block"
+           
     }else{
         children.item(i).style.display = "none"
+        
     }  
 
     if(continenteAtual.innerHTML == "Todos"){
@@ -75,17 +99,29 @@ for(let i = 0;i<children.length; i++){
 }
 }
 
-/*
-var overlay = document.getElementById("overlay")
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+ 
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    let cap = document.getElementById("nomeCapital").textContent = ""
+            let ppl = document.getElementById("people").textContent = ""
+            let reg = document.getElementById("regiao").textContent = ""
+            let lmap = document.getElementById("linkMap").href = ""
+            let loc = document.getElementById("loc").textContent =  ""
+            let latlong = document.getElementById("lat-long").textContent = ""
+            let timezone = document.getElementById("timezone").textContent = ""
+            let pc = document.getElementById("postalcode").textContent = ""
+            let nomepais = document.getElementById("nomeCountry").textContent = ""
+            let imgem = document.getElementById("imagem").src = ""
+  } 
 
-var conjuntoPaises = document.querySelectorAll("country")
+  var divs = document.getElementsByClassName("country")
+  
 
+  //Items do overlay
 
-for(const ele of conjuntoPaises){
-    ele.addEventListener("click", show)
-}
-
-function show(e){
-    console.log()
-}
-*/
+ 
+ 
