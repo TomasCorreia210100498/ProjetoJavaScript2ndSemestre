@@ -138,3 +138,46 @@ header{
     transform:scale(1.8);
    
 }
+
+@media only screen and (max-width: 1317px){
+    #slide_tudo{
+        display: block;
+    }
+
+    #opçoes{
+        margin-left:6%;
+        margin-right: 6%;
+    }
+    #img_desc{
+        display: block;
+    }
+    #monumento{
+        margin-right: 15%;
+        margin-left:15%;
+        margin-bottom: 5%;
+        margin-top:7%;
+    }
+    #imageShow{
+        border:0px;
+    }
+    #destaque{
+        margin-left: 5%;
+
+    }
+    #tip{
+        padding-left:20vw;
+    }
+}
+
+@media only screen and (max-width: 692px){
+    #imageShow{
+        border: 0px;
+        
+    }
+    #destaque{
+        height: auto;
+        width:50vw;
+        align-items: center;
+    }
+
+}
