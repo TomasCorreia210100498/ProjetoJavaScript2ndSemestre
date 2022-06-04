@@ -293,3 +293,17 @@ header{
             margin-bottom: 70vw;
         }
 }
+
+@media only screen and (max-width: 1000px){
+    .overlay-content{
+        display: block;
+    }
+    #right{
+        margin-bottom: 3vw;
+    }
+    #imagem{
+        margin-left: 4vw;
+        height: auto;
+        width:80vw;
+    }
+}
