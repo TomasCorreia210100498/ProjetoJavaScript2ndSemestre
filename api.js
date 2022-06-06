@@ -51,7 +51,7 @@ getCountry()
     
     function exibir(e){
         document.getElementById("myNav").style.width = "100%";
-            console.log(data.languages)
+            
            
             let cap = document.getElementById("nomeCapital").textContent = "Capital:  " + data.capital
             let ppl = document.getElementById("people").textContent = "População:  " + data.population
