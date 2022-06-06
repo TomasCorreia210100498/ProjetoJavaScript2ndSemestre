@@ -114,13 +114,31 @@ function openNav() {
             let loc = document.getElementById("loc").textContent =  ""
             let latlong = document.getElementById("lat-long").textContent = ""
             let timezone = document.getElementById("timezone").textContent = ""
-            let pc = document.getElementById("postalcode").textContent = ""
             let nomepais = document.getElementById("nomeCountry").textContent = ""
             let imgem = document.getElementById("imagem").src = ""
   } 
 
   var divs = document.getElementsByClassName("country")
   
+  var btn = document.getElementById("top")
+
+  window.onscroll = function() {voltarAoTop()};
+
+  function voltarAoTop() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+  function voltarAoTopo() {
+  
+    document.documentElement.scrollTop = 0; 
+
+  } 
+  
+
 
 
 
