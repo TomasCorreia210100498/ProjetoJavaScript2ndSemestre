@@ -122,7 +122,7 @@ function openNav() {
   var divs = document.getElementsByClassName("country")
   
 
-  //Items do overlay
+
 
  
  
