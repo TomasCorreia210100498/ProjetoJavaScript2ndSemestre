@@ -123,17 +123,18 @@ function openNav() {
   var btn = document.getElementById("top")
 
   window.onscroll = function() {voltarAoTop()};
-
+  
   function voltarAoTop() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       btn.style.display = "block";
     } else {
       btn.style.display = "none";
     }
+    
   }
 
   function voltarAoTopo() {
-  
+    
     document.documentElement.scrollTop = 0; 
 
   } 

@@ -166,7 +166,7 @@ header{
     background-color: white; 
     overflow-x: hidden; 
     transition: 0.5s; 
-    background-image: url(imgs/fundo.jpg);
+    background-image: url(imgs/whiteback.jpg);
 }
   
 .overlay-content{
